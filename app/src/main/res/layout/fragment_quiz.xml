@@ -54,76 +54,656 @@
         android:layout_height="match_parent"
             >
 
-        <LinearLayout
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="350dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttonColor"
-            android:textColor="@color/buttonTextColor"
-            android:text="Alabama"
-            />
+            <TableRow>
 
-        <Button
-            android:layout_width="350dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttonColor"
-            android:textColor="@color/buttonTextColor"
-            android:text="Alaska"
-            />
+                <Button
+                    android:id="@+id/Alabama"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="AL"
+                    android:textColor="@color/buttonTextColor" />
 
-        <Button
-            android:layout_width="350dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttonColor"
-            android:textColor="@color/buttonTextColor"
-            android:text="Arizona"
-            />
+                <Button
+                    android:id="@+id/Alaska"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="AK"
+                    android:textColor="@color/buttonTextColor" />
 
-        <Button
-            android:layout_width="350dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttonColor"
-            android:textColor="@color/buttonTextColor"
-            android:text="Arkansas"
-            />
+                <Button
+                    android:id="@+id/Arizona"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="AZ"
+                    android:textColor="@color/buttonTextColor" />
 
-            <Button
-                android:layout_width="350dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/buttonColor"
-                android:textColor="@color/buttonTextColor"
-                android:text="California"
-                />
-
-            <Button
-                android:layout_width="350dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/buttonColor"
-                android:textColor="@color/buttonTextColor"
-                android:text="Colorado"
-                />
-
-            <Button
-                android:layout_width="350dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/buttonColor"
-                android:textColor="@color/buttonTextColor"
-                android:text="Connecticut"
-                />
+                <Button
+                    android:id="@+id/Arkansas"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="AR"
+                    android:textColor="@color/buttonTextColor" />
 
 
-       </LinearLayout>
+                <Button
+                    android:id="@+id/California"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="CA"
+                    android:textColor="@color/buttonTextColor" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Colorado"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="CO"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Connecticut"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="CT"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Delaware"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="DE"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Florida"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="FL"
+                    android:textColor="@color/buttonTextColor" />
+
+
+                <Button
+                    android:id="@+id/Georgia"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="GA"
+                    android:textColor="@color/buttonTextColor" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Hawaii"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="HI"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Idaho"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="ID"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Illinois"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="IL"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Indiana"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="IN"
+                    android:textColor="@color/buttonTextColor" />
+
+
+                <Button
+                    android:id="@+id/Iowa"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="IA"
+                    android:textColor="@color/buttonTextColor" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Kansas"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="KS"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Kentucky"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="KY"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Louisiana"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="LA"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Maine"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="ME"
+                    android:textColor="@color/buttonTextColor" />
+
+
+                <Button
+                    android:id="@+id/Maryland"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MD"
+                    android:textColor="@color/buttonTextColor" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Massachusetts"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MA"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Michigan"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MI"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Minnesota"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MN"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Mississippi"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MS"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Missouri"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MO"
+                    android:textColor="@color/buttonTextColor" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Montana"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="MT"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Nebraska"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NE"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Nevada"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NV"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/NewHampshire"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NH"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/NewJersey"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NJ"
+                    android:textColor="@color/buttonTextColor" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/NewMexico"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NM"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/NewYork"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NY"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/NorthCarolina"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="NC"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/NorthDakota"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="ND"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Ohio"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="OH"
+                    android:textColor="@color/buttonTextColor" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Oklahoma"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="OK"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Oregon"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="OR"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Pennsylvania"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="PA"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/RhodeIsland"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="RI"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/SouthCarolina"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="SC"
+                    android:textColor="@color/buttonTextColor" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/SouthDakota"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="SD"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Tennessee"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="TN"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Texas"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="TX"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Utah"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="UT"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Vermont"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="VT"
+                    android:textColor="@color/buttonTextColor" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/Virginia"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="VA"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Washington"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="WA"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/WestVirginia"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="WV"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Wisconsin"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="WI"
+                    android:textColor="@color/buttonTextColor" />
+
+                <Button
+                    android:id="@+id/Wyoming"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="WY"
+                    android:textColor="@color/buttonTextColor" />
+
+            </TableRow>
+
+
+
+
+       </TableLayout>
+
     </ScrollView>
 
 
