@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
     tools:context=".StartScreenFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="500dp"
+        android:layout_height="fill_parent"
+        android:alpha=".7"
+        app:srcCompat="@drawable/splashoverlay" />
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        app:srcCompat="@drawable/geoquiz" />
+
 
     <Button
         android:id="@+id/us_states_quiz"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="US States Quiz"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@color/buttonColor"
+        android:text="US States Quiz" />
 
     <Button
         android:id="@+id/learn"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="learn"/>
-</LinearLayout>
+        android:layout_gravity="center"
+        android:backgroundTint="@color/buttonColor"
+        android:text="learn" />
+</FrameLayout>
