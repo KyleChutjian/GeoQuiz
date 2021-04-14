@@ -24,7 +24,6 @@ import java.util.Collections;
 import java.util.Date;
 
 public class Quiz extends Fragment {
-// rename fragment classes
     private TextView timer;
     private Cursor cursor;
     public int currentState = 0;
@@ -41,11 +40,6 @@ public class Quiz extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
-
-    public void setCurrentState(View view) {
-        ImageView imageView = (ImageView) view.findViewById(R.id.StateImage);
-
     }
 
     @Override

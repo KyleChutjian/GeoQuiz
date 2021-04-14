@@ -30,7 +30,6 @@ public class StatesDataSource {
         stateValues.put("description",description);
         stateValues.put("imageLink",imageLink);
         database.insert("STATES",null,stateValues);
-        System.out.println(description);
     }
     public Cursor getCursor() {
         Cursor cursor = database.rawQuery("SELECT * FROM STATES",null);
@@ -39,7 +38,7 @@ public class StatesDataSource {
     public void insertAllStates() {
         insertState("Delaware", "Fun fact about Delaware","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/delaware-map-outline-dddddd.png");
         insertState("Pennsylvania", "Fun fact about Pennsylvania","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/pennsylvania-map-outline-dddddd.png");
-        insertState("New Jersey","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/new-jersey-map-outline-dddddd.png");
+        insertState("NewJersey","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/new-jersey-map-outline-dddddd.png");
         insertState("Georgia","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/georgia-map-outline-dddddd.png");
         insertState("Connecticut","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/connecticut-map-outline-dddddd.png");
         insertState("Massachusetts","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/massachusetts-map-outline-dddddd.png");
@@ -47,7 +46,7 @@ public class StatesDataSource {
         insertState("SouthCarolina","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/south-carolina-map-outline-dddddd.png");
         insertState("NewHampshire","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/new-hampshire-map-outline-dddddd.png");
         insertState("Virginia","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/virginia-map-outline-dddddd.png");
-        insertState("New York","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/new-york-map-outline-dddddd.png");
+        insertState("NewYork","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/new-york-map-outline-dddddd.png");
         insertState("NorthCarolina","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/north-carolina-map-outline-dddddd.png");
         insertState("RhodeIsland","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/rhode-island-map-outline-dddddd.png");
         insertState("Vermont","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/vermont-map-outline-dddddd.png");
