@@ -19,7 +19,6 @@ public class StatesDatabaseHelper extends SQLiteOpenHelper {
 
     public StatesDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
-        System.out.println("Constructor");
     }
 
     @Override
@@ -27,19 +26,19 @@ public class StatesDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(DB_CREATE);
     }
 
-
-    private void insertState(SQLiteDatabase db, String state, String description, String imageLink) {
-        ContentValues stateValues = new ContentValues();
-        stateValues.put("STATE",state);
-        stateValues.put("DESCRIPTION",description);
-        stateValues.put("IMAGELINK",imageLink);
-        db.insert("STATES",null,stateValues);
-        System.out.println(description);
-    }
+//    public void insertState(String name, String description, String imageLink) {
+//        ContentValues stateValues = new ContentValues();
+//        stateValues.put("name",name);
+//        stateValues.put("description",description);
+//        stateValues.put("imageLink",imageLink);
+//        db.insert("STATES",null,stateValues);
+//        System.out.println(description);
+//    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS STATES");
         onCreate(db);
     }
+
 }

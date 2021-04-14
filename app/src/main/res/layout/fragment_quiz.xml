@@ -53,8 +53,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-            >
+        android:layout_height="match_parent">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -63,8 +62,7 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Alabama"
-                    android:onClick="onClick"
+                    android:id="@+id/button_1"
                     android:tag="Alabama"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
@@ -77,8 +75,7 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Alaska"
-                    android:onClick="onClick"
+                    android:id="@+id/button_2"
                     android:tag="Alaska"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
@@ -91,8 +88,7 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Arizona"
-                    android:onClick="onClick"
+                    android:id="@+id/button_3"
                     android:tag="Arizona"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
@@ -105,7 +101,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Arkansas"
+                    android:id="@+id/button_4"
+                    android:tag="Arkansas"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -118,7 +115,8 @@
 
 
                 <Button
-                    android:id="@+id/California"
+                    android:id="@+id/button_5"
+                    android:tag="California"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -133,7 +131,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Colorado"
+                    android:id="@+id/button_6"
+                    android:tag="Colorado"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -145,7 +144,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Connecticut"
+                    android:id="@+id/button_7"
+                    android:tag="Connecticut"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -157,7 +157,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Delaware"
+                    android:id="@+id/button_8"
+                    android:tag="Delaware"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -169,7 +170,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Florida"
+                    android:id="@+id/button_9"
+                    android:tag="Florida"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -182,7 +184,8 @@
 
 
                 <Button
-                    android:id="@+id/Georgia"
+                    android:id="@+id/button_10"
+                    android:tag="Georgia"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -197,7 +200,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Hawaii"
+                    android:id="@+id/button_11"
+                    android:tag="Hawaii"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -209,7 +213,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Idaho"
+                    android:id="@+id/button_12"
+                    android:tag="Idaho"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -221,7 +226,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Illinois"
+                    android:id="@+id/button_13"
+                    android:tag="Illinois"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -233,7 +239,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Indiana"
+                    android:id="@+id/button_14"
+                    android:tag="Indiana"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -246,7 +253,8 @@
 
 
                 <Button
-                    android:id="@+id/Iowa"
+                    android:id="@+id/button_15"
+                    android:tag="Iowa"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -261,7 +269,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Kansas"
+                    android:id="@+id/button_16"
+                    android:tag="Kansas"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -273,7 +282,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Kentucky"
+                    android:id="@+id/button_17"
+                    android:tag="Kentucky"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -285,7 +295,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Louisiana"
+                    android:id="@+id/button_18"
+                    android:tag="Louisiana"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -297,7 +308,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Maine"
+                    android:id="@+id/button_19"
+                    android:tag="Maine"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -310,7 +322,8 @@
 
 
                 <Button
-                    android:id="@+id/Maryland"
+                    android:id="@+id/button_20"
+                    android:tag="Maryland"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -325,7 +338,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Massachusetts"
+                    android:id="@+id/button_21"
+                    android:tag="Massachusetts"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -337,7 +351,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Michigan"
+                    android:id="@+id/button_22"
+                    android:tag="Michigan"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -349,7 +364,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Minnesota"
+                    android:id="@+id/button_23"
+                    android:tag="Minnesota"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -361,7 +377,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Mississippi"
+                    android:id="@+id/button_24"
+                    android:tag="Mississippi"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -373,7 +390,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Missouri"
+                    android:id="@+id/button_25"
+                    android:tag="Missouri"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -389,7 +407,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Montana"
+                    android:id="@+id/button_26"
+                    android:tag="Montana"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -401,7 +420,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Nebraska"
+                    android:id="@+id/button_27"
+                    android:tag="Nebraska"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -413,7 +433,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Nevada"
+                    android:id="@+id/button_28"
+                    android:tag="Nevada"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -425,7 +446,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/NewHampshire"
+                    android:id="@+id/button_29"
+                    android:tag="NewHampshire"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -437,7 +459,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/NewJersey"
+                    android:id="@+id/button_30"
+                    android:tag="NewJersey"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -453,7 +476,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/NewMexico"
+                    android:id="@+id/button_31"
+                    android:tag="NewMexico"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -465,7 +489,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/NewYork"
+                    android:id="@+id/button_32"
+                    android:tag="NewYork"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -477,7 +502,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/NorthCarolina"
+                    android:id="@+id/button_33"
+                    android:tag="NorthCarolina"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -489,7 +515,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/NorthDakota"
+                    android:id="@+id/button_34"
+                    android:tag="NorthDakota"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -501,7 +528,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Ohio"
+                    android:id="@+id/button_35"
+                    android:tag="Ohio"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -518,7 +546,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Oklahoma"
+                    android:id="@+id/button_36"
+                    android:tag="Oklahoma"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -530,7 +559,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Oregon"
+                    android:id="@+id/button_37"
+                    android:tag="Oregon"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -542,7 +572,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Pennsylvania"
+                    android:id="@+id/button_38"
+                    android:tag="Pennsylvania"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -554,7 +585,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/RhodeIsland"
+                    android:id="@+id/button_39"
+                    android:tag="RhodeIsland"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -566,7 +598,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/SouthCarolina"
+                    android:id="@+id/button_40"
+                    android:tag="SouthCarolina"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -582,7 +615,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/SouthDakota"
+                    android:id="@+id/button_41"
+                    android:tag="SouthDakota"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -594,7 +628,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Tennessee"
+                    android:id="@+id/button_42"
+                    android:tag="Tennessee"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -606,7 +641,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Texas"
+                    android:id="@+id/button_43"
+                    android:tag="Texas"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -618,7 +654,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Utah"
+                    android:id="@+id/button_44"
+                    android:tag="Utah"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -630,7 +667,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Vermont"
+                    android:id="@+id/button_45"
+                    android:tag="Vermont"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -646,7 +684,8 @@
             <TableRow>
 
                 <Button
-                    android:id="@+id/Virginia"
+                    android:id="@+id/button_46"
+                    android:tag="Virginia"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -658,7 +697,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Washington"
+                    android:id="@+id/button_47"
+                    android:tag="Washington"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -670,7 +710,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/WestVirginia"
+                    android:id="@+id/button_48"
+                    android:tag="WestVirginia"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -682,7 +723,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Wisconsin"
+                    android:id="@+id/button_49"
+                    android:tag="Wisconsin"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -694,7 +736,8 @@
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
-                    android:id="@+id/Wyoming"
+                    android:id="@+id/button_50"
+                    android:tag="Wyoming"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
