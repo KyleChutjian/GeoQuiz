@@ -14,32 +14,11 @@ import android.view.ViewGroup;
 
 public class StartScreenFragment extends Fragment implements View.OnClickListener{
     NavController navController = null;
-
-
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    private String mParam1;
-    private String mParam2;
-
     public StartScreenFragment() {}
-
-    public static StartScreenFragment newInstance(String param1, String param2) {
-        StartScreenFragment fragment = new StartScreenFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override

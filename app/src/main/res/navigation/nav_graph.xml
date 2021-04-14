@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/quiz"
-        android:name="com.example.geoquiz.Quiz"
+        android:name="com.example.geoquiz.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" >
         <action
@@ -37,12 +37,12 @@
     </fragment>
     <fragment
         android:id="@+id/quizResults"
-        android:name="com.example.geoquiz.QuizResults"
+        android:name="com.example.geoquiz.QuizResultsFragment"
         android:label="fragment_quiz_results"
         tools:layout="@layout/fragment_quiz_results" />
     <fragment
         android:id="@+id/learn"
-        android:name="com.example.geoquiz.Learn"
+        android:name="com.example.geoquiz.LearnFragment"
         android:label="fragment_learn"
         tools:layout="@layout/fragment_learn" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/specificLearn"
-        android:name="com.example.geoquiz.SpecificLearn"
+        android:name="com.example.geoquiz.SpecificLearnFragment"
         android:label="fragment_specific_learn"
         tools:layout="@layout/fragment_specific_learn" />
 </navigation>

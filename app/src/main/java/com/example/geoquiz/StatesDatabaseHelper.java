@@ -26,15 +26,6 @@ public class StatesDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(DB_CREATE);
     }
 
-//    public void insertState(String name, String description, String imageLink) {
-//        ContentValues stateValues = new ContentValues();
-//        stateValues.put("name",name);
-//        stateValues.put("description",description);
-//        stateValues.put("imageLink",imageLink);
-//        db.insert("STATES",null,stateValues);
-//        System.out.println(description);
-//    }
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS STATES");

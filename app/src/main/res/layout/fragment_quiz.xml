@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".Quiz">
+    tools:context=".QuizFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
