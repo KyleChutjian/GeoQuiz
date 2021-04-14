@@ -62,6 +62,7 @@ public class QuizFragment extends Fragment {
 
     public boolean isCorrect(View view, View buttonView) {
         Button clickedButton = (Button) view.findViewById(buttonView.getId());
+        System.out.println("Checking if " + clickedButton.getTag().toString() + " is equal to " + currentStateName);
         if (currentStateName.equalsIgnoreCase(clickedButton.getTag().toString())) {
             System.out.println("Correct!");
             return true;
@@ -96,6 +97,7 @@ public class QuizFragment extends Fragment {
                 currentStateDescription = cursor.getString(2);
                 currentStateImageLink = cursor.getString(3);
                 setImage(view);
+                System.out.println("CurrentStateName: " + currentStateName);
             }
         } catch (SQLException e) {
             System.out.println("Database didnt load");
@@ -122,6 +124,7 @@ public class QuizFragment extends Fragment {
                         currentQuestion++;
                     } else {
                         // move onto results screen
+                        System.out.println("No more states left to display.");
                     }
                     setupDatabase(view);
                 }
