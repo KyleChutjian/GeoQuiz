@@ -31,18 +31,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class StartScreenActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private DrawerLayout drawerLayout;
     private NavController navController;
     private NavigationView navigationView;
-    private Cursor cursor;
-    public int currentState = 0;
-    private ArrayList<Integer> possibleStates;
-    private StatesDataSource dataSource;
-    public int currentQuestion = 1;
-
-    private String currentStateName = null;
-    private String currentStateDescription = null;
-    private String currentStateImageLink = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +41,7 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
 
         navigationView = findViewById(R.id.navigationView);
         navController = Navigation.findNavController(this,R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout);
+        NavigationUI.setupActionBarWithNavController(this,navController);
         NavigationUI.setupWithNavController(navigationView,navController);
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -59,19 +49,17 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
 
     @Override
     public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        super.onBackPressed();
+//        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+//            drawerLayout.closeDrawer(GravityCompat.START);
+//        } else {
+//
+//        }
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
-    @Override
-    public boolean onSupportNavigateUp() {
-        return NavigationUI.navigateUp(navController,drawerLayout);
-    }
+
 
 }

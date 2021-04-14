@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteDatabase;
 public class StatesDataSource {
     private SQLiteDatabase database;
     private StatesDatabaseHelper dbHelper;
-    private String[] allColumns = {};
 
     public StatesDataSource(Context context) {
         dbHelper = new StatesDatabaseHelper(context);

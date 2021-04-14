@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class StartScreenFragment extends Fragment implements View.OnClickListener{
-    NavController navController = null;
+    private NavController navController = null;
     public StartScreenFragment() {}
 
     @Override

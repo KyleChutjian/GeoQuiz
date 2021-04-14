@@ -26,10 +26,9 @@ import java.util.Date;
 public class QuizFragment extends Fragment {
     private TextView timer;
     private Cursor cursor;
-    public int currentState = 0;
     private ArrayList<Integer> possibleStates;
     private StatesDataSource dataSource;
-    public int currentQuestion = 0;
+    private int currentQuestion = 0;
     private String currentStateName = null;
     private String currentStateDescription = null;
     private String currentStateImageLink = null;
