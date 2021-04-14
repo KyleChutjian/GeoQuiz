@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/fragment_quiz"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
@@ -32,6 +33,7 @@
 
     <ImageView
         android:id="@+id/StateImage"
+        android:tag=""
         android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="200dp"
@@ -62,6 +64,8 @@
 
                 <Button
                     android:id="@+id/Alabama"
+                    android:onClick="onClick"
+                    android:tag="Alabama"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -74,6 +78,8 @@
 
                 <Button
                     android:id="@+id/Alaska"
+                    android:onClick="onClick"
+                    android:tag="Alaska"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -86,6 +92,8 @@
 
                 <Button
                     android:id="@+id/Arizona"
+                    android:onClick="onClick"
+                    android:tag="Arizona"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
