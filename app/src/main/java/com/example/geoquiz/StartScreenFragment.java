@@ -26,7 +26,7 @@ public class StartScreenFragment extends Fragment implements View.OnClickListene
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         view.findViewById(R.id.us_states_quiz).setOnClickListener(this);
-        view.findViewById(R.id.learn).setOnClickListener(this);
+        view.findViewById(R.id.LearnFragment).setOnClickListener(this);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class StartScreenFragment extends Fragment implements View.OnClickListene
             case R.id.us_states_quiz:
                 navController.navigate(R.id.action_startScreenFragment_to_preQuizFragment);
                 break;
-            case R.id.learn:
+            case R.id.LearnFragment:
                 navController.navigate(R.id.action_startScreenFragment_to_learn);
                 break;
         }

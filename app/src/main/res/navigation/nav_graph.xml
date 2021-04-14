@@ -6,13 +6,13 @@
     app:startDestination="@id/startScreenFragment">
 
     <fragment
-        android:id="@+id/preQuizFragment"
+        android:id="@+id/PreQuizFragment"
         android:name="com.example.geoquiz.PreQuizFragment"
         android:label="fragment_pre_quiz"
         tools:layout="@layout/fragment_pre_quiz" >
         <action
             android:id="@+id/action_preQuizFragment_to_quiz"
-            app:destination="@id/quiz" />
+            app:destination="@id/QuizFragment" />
     </fragment>
     <fragment
         android:id="@+id/startScreenFragment"
@@ -21,36 +21,36 @@
         tools:layout="@layout/fragment_start_screen" >
         <action
             android:id="@+id/action_startScreenFragment_to_preQuizFragment"
-            app:destination="@id/preQuizFragment" />
+            app:destination="@id/PreQuizFragment" />
         <action
             android:id="@+id/action_startScreenFragment_to_learn"
-            app:destination="@id/learn" />
+            app:destination="@id/LearnFragment" />
     </fragment>
     <fragment
-        android:id="@+id/quiz"
+        android:id="@+id/QuizFragment"
         android:name="com.example.geoquiz.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" >
         <action
             android:id="@+id/action_quiz_to_quizResults"
-            app:destination="@id/quizResults" />
+            app:destination="@id/QuizResultsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/quizResults"
+        android:id="@+id/QuizResultsFragment"
         android:name="com.example.geoquiz.QuizResultsFragment"
         android:label="fragment_quiz_results"
         tools:layout="@layout/fragment_quiz_results" />
     <fragment
-        android:id="@+id/learn"
+        android:id="@+id/LearnFragment"
         android:name="com.example.geoquiz.LearnFragment"
         android:label="fragment_learn"
         tools:layout="@layout/fragment_learn" >
         <action
             android:id="@+id/action_learn_to_specificLearn"
-            app:destination="@id/specificLearn" />
+            app:destination="@id/SpecificLearnFragment" />
     </fragment>
     <fragment
-        android:id="@+id/specificLearn"
+        android:id="@+id/SpecificLearnFragment"
         android:name="com.example.geoquiz.SpecificLearnFragment"
         android:label="fragment_specific_learn"
         tools:layout="@layout/fragment_specific_learn" />
