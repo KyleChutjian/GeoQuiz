@@ -1,14 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".QuizResultsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/ResultsTitle"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="RESULTS:" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/IGuessedText"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="I GUESSED"/>
+
+    <TextView
+        android:id="@+id/ScoreText"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="##/50 STATES"/>
+
+    <TextView
+        android:id="@+id/CorrectText"
+        android:layout_marginTop="-20dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CORRECTLY"/>
+
+    <TextView
+        android:id="@+id/MyTimeText"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MY TIME WAS"/>
+
+    <TextView
+        android:id="@+id/TimeText"
+        android:layout_marginTop="-20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="12:34"/>
+
+    <TextView
+        android:id="@+id/LeaderboardText"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Leaderboard:"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/FirstPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:text="1:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/FirstPlaceName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="NO NAME"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/FirstPlaceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/SecondPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:text="2:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/SecondPlaceName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="NO NAME"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/SecondPlaceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ThirdPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:text="3:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ThirdPlaceName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="NO NAME"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ThirdPlaceTime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/TryAgainButton"
+            android:backgroundTint="@color/buttonColor"
+            android:layout_marginLeft="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_weight="3"
+            android:text="TRY AGAIN" />
+
+        <Button
+            android:id="@+id/QuizToLearnButton"
+            android:backgroundTint="@color/buttonColor"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:layout_weight="3"
+            android:text="LEARN" />
+
+        <Button
+            android:id="@+id/ShareButton"
+            android:backgroundTint="@color/buttonColor"
+            android:layout_marginRight="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="10dp"
+            android:text="SHARE RESULTS" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

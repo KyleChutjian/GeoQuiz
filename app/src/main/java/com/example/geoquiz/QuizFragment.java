@@ -8,7 +8,13 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +29,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 
+
+// I added the navigation to results screen only for when the timer runs out - couldn't find where questions are all done
+
 public class QuizFragment extends Fragment {
     private TextView timer;
     private Cursor cursor;
@@ -33,6 +42,7 @@ public class QuizFragment extends Fragment {
     private String currentStateDescription = null;
     private String currentStateImageLink = null;
     private int score = 0;
+    private NavController navController;
 
     public QuizFragment() {}
 
@@ -44,6 +54,8 @@ public class QuizFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_quiz, container, false);
+        //Set score to 0 each time quiz is created
+        score = 0;
         timer = (TextView) view.findViewById(R.id.timeElapsedTitle);
         runTimer(timer);
         possibleStates = new ArrayList<>();
@@ -60,6 +72,13 @@ public class QuizFragment extends Fragment {
         return view;
     }
 
+    // Added this for navcontroller and another fragment had it
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        navController = Navigation.findNavController(view);
+    }
+
     public boolean isCorrect(View view, View buttonView) {
         Button clickedButton = (Button) view.findViewById(buttonView.getId());
         System.out.println("Checking if " + clickedButton.getTag().toString() + " is equal to " + currentStateName);
@@ -73,7 +92,7 @@ public class QuizFragment extends Fragment {
     }
 
     public void runTimer(View view){
-        new CountDownTimer(3*60000, 1000) {
+        new CountDownTimer(1*15000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 timer.setText(new SimpleDateFormat("mm:ss").format(new Date( millisUntilFinished)));
@@ -81,6 +100,7 @@ public class QuizFragment extends Fragment {
 
             public void onFinish() {
                 timer.setText("Time's Up!");
+                navController.navigate(R.id.action_quiz_to_quizResults);
             }
         }.start();
     }
