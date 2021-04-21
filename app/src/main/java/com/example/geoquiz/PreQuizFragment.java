@@ -11,6 +11,8 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class PreQuizFragment extends Fragment implements View.OnClickListener {
     NavController navController = null;
@@ -38,7 +40,15 @@ public class PreQuizFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.startQuizButton) {
-            navController.navigate(R.id.action_preQuizFragment_to_quiz);
+            EditText playerNameEditText = (EditText) getView().findViewById(R.id.playerName);
+            if (playerNameEditText.getText().toString().trim().isEmpty()) {
+                Toast.makeText(getContext(),"Enter your name!",Toast.LENGTH_LONG).show();
+            } else {
+                Bundle bundle = new Bundle();
+                bundle.putString("playerName",playerNameEditText.getText().toString());
+                navController.navigate(R.id.action_preQuizFragment_to_quiz,bundle);
+            }
+
         }
     }
 }
