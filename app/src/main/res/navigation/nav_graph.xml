@@ -39,7 +39,14 @@
         android:id="@+id/QuizResultsFragment"
         android:name="com.example.geoquiz.QuizResultsFragment"
         android:label="fragment_quiz_results"
-        tools:layout="@layout/fragment_quiz_results" />
+        tools:layout="@layout/fragment_quiz_results" >
+        <action
+            android:id="@+id/action_QuizResultsFragment_to_PreQuizFragment"
+            app:destination="@id/PreQuizFragment" />
+        <action
+            android:id="@+id/action_QuizResultsFragment_to_LearnFragment"
+            app:destination="@id/LearnFragment" />
+    </fragment>
     <fragment
         android:id="@+id/LearnFragment"
         android:name="com.example.geoquiz.LearnFragment"

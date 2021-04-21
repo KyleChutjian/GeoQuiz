@@ -106,7 +106,21 @@ public class QuizFragment extends Fragment {
 
             public void onFinish() {
                 timerTextView.setText("Time's Up!");
-                navController.navigate(R.id.action_quiz_to_quizResults);
+                time = maxTimerSeconds - (double) currentMillis/1000;
+                leaderboardDataSource = new LeaderboardDataSource(getContext());
+                leaderboardDataSource.open();
+
+                System.out.println("PlayerName: " + playerName);
+                System.out.println("PlayerTime: " + time);
+                System.out.println("PlayerScore: " + score);
+
+                leaderboardDataSource.insertEntry(playerName,time,score);
+                leaderboardDataSource.close();
+                Bundle bundle = new Bundle();
+                bundle.putString("playerName",playerName);
+                bundle.putDouble("time",time);
+                bundle.putInt("score",score);
+                navController.navigate(R.id.action_quiz_to_quizResults,bundle);
             }
 
         }.start();
