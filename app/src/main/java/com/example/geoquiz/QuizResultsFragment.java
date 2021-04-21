@@ -1,5 +1,6 @@
 package com.example.geoquiz;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 
@@ -158,13 +159,13 @@ public class QuizResultsFragment extends Fragment {
                         break;
                     case R.id.ShareButton:
                         System.out.println("Share clicked");
-//                        Intent share = new Intent(Intent.ACTION_SEND);
-//                        share.setType("text/plain");
-//                        String subject = "Download GeoQuiz!";
-//                        String shareText = "I got " + score + "/50 States correct on my GeoQuiz!\nMy time was " + timeTaken + "\nTry and beat that!";
-//                        share.putExtra(Intent.EXTRA_SUBJECT, subject);
-//                        share.putExtra(Intent.EXTRA_TEXT, shareText);
-//                        startActivity(Intent.createChooser(share, "My Score on GeoQuiz"));
+                        Intent share = new Intent(Intent.ACTION_SEND);
+                        share.setType("text/plain");
+                        String subject = "Download GeoQuiz!";
+                        String shareText = "I got " + playerScore + "/50 States correct on my GeoQuiz!\nMy time was " + playerTime + "\nTry and beat that!";
+                        share.putExtra(Intent.EXTRA_SUBJECT, subject);
+                        share.putExtra(Intent.EXTRA_TEXT, shareText);
+                        startActivity(Intent.createChooser(share, "My Score on GeoQuiz"));
                         break;
                 }
             }
