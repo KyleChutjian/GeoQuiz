@@ -89,4 +89,15 @@ public class StatesDataSource {
         insertState("Hawaii","Fun Fact: ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/hawaii-map-outline-dddddd.png");
         //dataSource.insertState("","","");
     }
+
+    public String[] queryWithImageLink(String link) {
+        Cursor cursor = database.rawQuery("SELECT name,description FROM STATES WHERE imageLink LIKE '" + link + "%';" ,null);
+        String[] returnString = null;
+        if (cursor.moveToFirst()) {
+            if (!cursor.isAfterLast()) {
+                returnString = new String[]{cursor.getString(0), cursor.getString(1)};
+            }
+        }
+        return returnString;
+    }
 }
