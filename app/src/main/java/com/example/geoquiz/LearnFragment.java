@@ -81,6 +81,7 @@ public class LearnFragment extends Fragment {
                     Bundle bundle = new Bundle();
                     bundle.putString("stateName",stateName);
                     bundle.putString("stateDescription",stateDescription);
+                    bundle.putString("imageLink",imageLink);
                     navController.navigate(R.id.action_learn_to_specificLearn,bundle);
                 }
             });
