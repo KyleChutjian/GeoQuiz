@@ -170,4 +170,17 @@ public class QuizResultsFragment extends Fragment {
                 }
             }
     };
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        leaderboardDataSource.open();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        leaderboardDataSource.close();
+
+    }
 }

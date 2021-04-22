@@ -41,11 +41,6 @@ public class LearnFragment extends Fragment {
         statesDataSource = new StatesDataSource(getContext());
         statesDataSource.open();
         setImages(view);
-
-
-
-
-
         return view;
     }
 
@@ -107,5 +102,17 @@ public class LearnFragment extends Fragment {
         protected void onPostExecute(Bitmap result) {
             bmImage.setImageBitmap(result);
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        statesDataSource.open();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        statesDataSource.close();
     }
 }
