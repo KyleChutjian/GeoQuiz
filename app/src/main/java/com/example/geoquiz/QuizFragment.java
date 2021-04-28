@@ -61,6 +61,9 @@ public class QuizFragment extends Fragment {
         playerName = getArguments().getString("playerName");
         numberOfQuestions = getArguments().getInt("questions");
         maxTimerSeconds = getArguments().getInt("time");
+
+        TextView myScoreText = (TextView) view.findViewById(R.id.myScoreText);
+        myScoreText.setText("0/" + numberOfQuestions);
         //Set score to 0 each time quiz is created
         score = 0;
         timerTextView = (TextView) view.findViewById(R.id.timeElapsedTitle);
@@ -70,12 +73,9 @@ public class QuizFragment extends Fragment {
             possibleStates.add(i); // adds indexes 1-50 to the list
         }
         Collections.shuffle(possibleStates); // randomizes the list
-        System.out.println("FULL 50: " + possibleStates.toString());
-//        possibleStates = (ArrayList<Integer>) possibleStates.subList(0,numberOfQuestions);
-//        System.out.println(possibleStates.subList(0,numberOfQuestions));
+
 
         possibleStates = new ArrayList<Integer>(possibleStates.subList(0,numberOfQuestions));
-        System.out.println("SHORTENED: " + possibleStates.toString());
         addListeners(view);
         statesDataSource = new StatesDataSource(getContext());
         statesDataSource.open();
@@ -170,6 +170,8 @@ public class QuizFragment extends Fragment {
                     }
                     if (currentQuestion < numberOfQuestions - 1) {
                         System.out.println(currentQuestion + "," + numberOfQuestions);
+                        TextView myScoreText = (TextView) view.findViewById(R.id.myScoreText);
+                        myScoreText.setText(score + "/" + numberOfQuestions);
                         currentQuestion++;
                     } else {
                         System.out.println("SUBMITTED ALL 50 STATES");

@@ -110,7 +110,7 @@ public class QuizResultsFragment extends Fragment {
 
             TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
             TextView firstPlaceTime = (TextView) view.findViewById(R.id.FirstPlaceTime);
-//            TextView firstPlaceScore = (TextView) view.findViewById(R.id.FirstPlaceScore);
+//            TextView firstPlaceScore = (TextView) view.findViewById(R.id.First);
 
             TextView secondPlaceName = (TextView) view.findViewById(R.id.SecondPlaceName);
             TextView secondPlaceTime = (TextView) view.findViewById(R.id.SecondPlaceTime);
