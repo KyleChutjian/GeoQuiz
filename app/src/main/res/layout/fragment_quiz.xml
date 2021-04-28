@@ -99,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="AL"
                     android:textColor="@color/buttonTextColor" />
 
@@ -112,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="AK"
                     android:textColor="@color/buttonTextColor" />
 
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="AZ"
                     android:textColor="@color/buttonTextColor" />
 
@@ -138,7 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="AR"
                     android:textColor="@color/buttonTextColor" />
 
@@ -152,81 +152,81 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="CA"
                     android:textColor="@color/buttonTextColor" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_6"
-                    android:tag="Colorado"
-                    android:layout_weight="5"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:background="@color/buttonColor"
+                    android:tag="Colorado"
                     android:text="CO"
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
                     android:id="@+id/button_7"
-                    android:tag="Connecticut"
-                    android:layout_weight="5"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:background="@color/buttonColor"
+                    android:tag="Connecticut"
                     android:text="CT"
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
                     android:id="@+id/button_8"
-                    android:tag="Delaware"
-                    android:layout_weight="5"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:background="@color/buttonColor"
+                    android:tag="Delaware"
                     android:text="DE"
                     android:textColor="@color/buttonTextColor" />
 
                 <Button
                     android:id="@+id/button_9"
-                    android:tag="Florida"
-                    android:layout_weight="5"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:background="@color/buttonColor"
+                    android:tag="Florida"
                     android:text="FL"
                     android:textColor="@color/buttonTextColor" />
 
 
                 <Button
                     android:id="@+id/button_10"
-                    android:tag="Georgia"
-                    android:layout_weight="5"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:background="@color/buttonColor"
+                    android:tag="Georgia"
                     android:text="GA"
                     android:textColor="@color/buttonTextColor" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_11"
@@ -237,7 +237,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="HI"
                     android:textColor="@color/buttonTextColor" />
 
@@ -250,7 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="ID"
                     android:textColor="@color/buttonTextColor" />
 
@@ -263,7 +263,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="IL"
                     android:textColor="@color/buttonTextColor" />
 
@@ -276,7 +276,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="IN"
                     android:textColor="@color/buttonTextColor" />
 
@@ -290,12 +290,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="IA"
                     android:textColor="@color/buttonTextColor" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_16"
@@ -306,7 +306,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="KS"
                     android:textColor="@color/buttonTextColor" />
 
@@ -319,7 +319,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="KY"
                     android:textColor="@color/buttonTextColor" />
 
@@ -332,7 +332,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="LA"
                     android:textColor="@color/buttonTextColor" />
 
@@ -345,7 +345,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="ME"
                     android:textColor="@color/buttonTextColor" />
 
@@ -359,12 +359,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MD"
                     android:textColor="@color/buttonTextColor" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_21"
@@ -375,7 +375,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MA"
                     android:textColor="@color/buttonTextColor" />
 
@@ -388,7 +388,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MI"
                     android:textColor="@color/buttonTextColor" />
 
@@ -401,7 +401,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MN"
                     android:textColor="@color/buttonTextColor" />
 
@@ -414,7 +414,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MS"
                     android:textColor="@color/buttonTextColor" />
 
@@ -427,13 +427,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MO"
                     android:textColor="@color/buttonTextColor" />
 
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_26"
@@ -444,7 +444,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="MT"
                     android:textColor="@color/buttonTextColor" />
 
@@ -457,7 +457,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NE"
                     android:textColor="@color/buttonTextColor" />
 
@@ -470,7 +470,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NV"
                     android:textColor="@color/buttonTextColor" />
 
@@ -483,7 +483,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NH"
                     android:textColor="@color/buttonTextColor" />
 
@@ -496,13 +496,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NJ"
                     android:textColor="@color/buttonTextColor" />
 
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_31"
@@ -513,7 +513,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NM"
                     android:textColor="@color/buttonTextColor" />
 
@@ -526,7 +526,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NY"
                     android:textColor="@color/buttonTextColor" />
 
@@ -539,7 +539,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="NC"
                     android:textColor="@color/buttonTextColor" />
 
@@ -552,7 +552,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="ND"
                     android:textColor="@color/buttonTextColor" />
 
@@ -565,14 +565,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="OH"
                     android:textColor="@color/buttonTextColor" />
 
 
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_36"
@@ -583,7 +583,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="OK"
                     android:textColor="@color/buttonTextColor" />
 
@@ -596,7 +596,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="OR"
                     android:textColor="@color/buttonTextColor" />
 
@@ -609,7 +609,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="PA"
                     android:textColor="@color/buttonTextColor" />
 
@@ -622,7 +622,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="RI"
                     android:textColor="@color/buttonTextColor" />
 
@@ -635,13 +635,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="SC"
                     android:textColor="@color/buttonTextColor" />
 
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button_41"
@@ -652,7 +652,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="SD"
                     android:textColor="@color/buttonTextColor" />
 
@@ -665,7 +665,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="TN"
                     android:textColor="@color/buttonTextColor" />
 
@@ -678,7 +678,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="TX"
                     android:textColor="@color/buttonTextColor" />
 
@@ -691,7 +691,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="UT"
                     android:textColor="@color/buttonTextColor" />
 
@@ -704,13 +704,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="VT"
                     android:textColor="@color/buttonTextColor" />
 
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
 
                 <Button
                     android:id="@+id/button_46"
@@ -721,7 +721,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="VA"
                     android:textColor="@color/buttonTextColor" />
 
@@ -734,7 +734,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="WA"
                     android:textColor="@color/buttonTextColor" />
 
@@ -747,7 +747,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="WV"
                     android:textColor="@color/buttonTextColor" />
 
@@ -760,7 +760,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="WI"
                     android:textColor="@color/buttonTextColor" />
 
@@ -773,7 +773,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@color/buttonColor"
                     android:text="WY"
                     android:textColor="@color/buttonTextColor" />
 

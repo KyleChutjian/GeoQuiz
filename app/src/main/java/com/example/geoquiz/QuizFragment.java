@@ -97,18 +97,20 @@ public class QuizFragment extends Fragment {
         navController = Navigation.findNavController(view);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @SuppressLint("ResourceAsColor")
+//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+//    @SuppressLint("ResourceAsColor")
     public boolean isCorrect(View view, View buttonView) {
         Button clickedButton = (Button) view.findViewById(buttonView.getId());
         System.out.println("Checking if " + clickedButton.getTag().toString() + " is equal to " + currentStateName);
         if (currentStateName.equalsIgnoreCase(clickedButton.getTag().toString())) {
             System.out.println("Correct!");
-            buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.green));
+            buttonView.setBackgroundColor(getResources().getColor(R.color.green));
+           // buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.green));
             return true;
         } else {
             System.out.println("Incorrect!");
-            buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.red));
+            buttonView.setBackgroundColor(getResources().getColor(R.color.red));
+           // buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.red));
             return false;
         }
     }
