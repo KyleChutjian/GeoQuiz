@@ -9,10 +9,9 @@
     android:gravity="center_horizontal"
     tools:context=".QuizFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/StatesQuizTitle"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -25,16 +24,46 @@
         android:id="@+id/timeElapsedTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/textColor"
-        android:textSize="25dp"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:text="00:00"
         android:layout_gravity="center_horizontal"
         />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/myScoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:text="SCORE: "
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/myScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="0/50"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/StateImage"
         android:tag=""
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_width="350dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
@@ -42,7 +71,7 @@
 
     <TextView
         android:id="@+id/WhichStateTitle"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -750,12 +779,8 @@
 
             </TableRow>
 
-
-
-
        </TableLayout>
 
     </ScrollView>
-
 
 </LinearLayout>
