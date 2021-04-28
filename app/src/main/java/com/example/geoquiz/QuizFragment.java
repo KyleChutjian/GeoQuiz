@@ -1,14 +1,20 @@
 package com.example.geoquiz;
 
+import android.annotation.SuppressLint;
+import android.content.res.ColorStateList;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -91,14 +97,18 @@ public class QuizFragment extends Fragment {
         navController = Navigation.findNavController(view);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @SuppressLint("ResourceAsColor")
     public boolean isCorrect(View view, View buttonView) {
         Button clickedButton = (Button) view.findViewById(buttonView.getId());
         System.out.println("Checking if " + clickedButton.getTag().toString() + " is equal to " + currentStateName);
         if (currentStateName.equalsIgnoreCase(clickedButton.getTag().toString())) {
             System.out.println("Correct!");
+            buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.green));
             return true;
         } else {
             System.out.println("Incorrect!");
+            buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.red));
             return false;
         }
     }
@@ -166,7 +176,11 @@ public class QuizFragment extends Fragment {
                 public void onClick(View v) {
                     if(isCorrect(view,v)) {
                         score++;
+//                        v.setBackgroundColor(Color.GREEN);
                         // Make button text green later
+                    } else {
+//                        v.setBackgroundColor(Color.RED);
+//                        v.setBackground();
                     }
                     if (currentQuestion < numberOfQuestions - 1) {
                         System.out.println(currentQuestion + "," + numberOfQuestions);
