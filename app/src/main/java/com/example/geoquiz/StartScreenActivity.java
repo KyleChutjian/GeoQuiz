@@ -10,6 +10,7 @@ import androidx.core.view.MenuItemCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
@@ -44,11 +45,20 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
     private boolean isDarkModeOn;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
+    private SettingsFragment settingsFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_screen);
+
+        if (savedInstanceState != null) {
+            settingsFragment = (SettingsFragment) getSupportFragmentManager().findFragmentById(R.id.settingsFragment);
+
+        } else {
+            settingsFragment = new SettingsFragment();
+        }
+
 
         // Toolbar goes in Activity so it appears on every screen
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -120,12 +130,16 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
                 break;
 
             // open Settings screen
-//            case R.id.app_bar_settings:
-//                break;
+            case R.id.app_bar_settings:
+                System.out.println("CLICKED ON SETTINGS");
+                navController.navigate(R.id.settingsFragment);
+                break;
 
             // open Help screen
-//            case R.id.app_bar_help:
-//                break;
+            case R.id.app_bar_help:
+                navController.navigate(R.id.helpFragment);
+                System.out.println("CLICKED ON HELP");
+                break;
 
             default:
                 return super.onOptionsItemSelected(item);

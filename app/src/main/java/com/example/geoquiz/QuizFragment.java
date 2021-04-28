@@ -35,6 +35,7 @@ public class QuizFragment extends Fragment {
     private long maxTimerSeconds = 20;
     private long currentMillis = 0;
     private ArrayList<Integer> possibleStates;
+    private int numberOfQuestions = 50;
     private int currentQuestion = 0;
     private NavController navController;
 
@@ -58,7 +59,8 @@ public class QuizFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_quiz, container, false);
         playerName = getArguments().getString("playerName");
-
+        numberOfQuestions = getArguments().getInt("questions");
+        maxTimerSeconds = getArguments().getInt("time");
         //Set score to 0 each time quiz is created
         score = 0;
         timerTextView = (TextView) view.findViewById(R.id.timeElapsedTitle);
@@ -68,7 +70,12 @@ public class QuizFragment extends Fragment {
             possibleStates.add(i); // adds indexes 1-50 to the list
         }
         Collections.shuffle(possibleStates); // randomizes the list
+        System.out.println("FULL 50: " + possibleStates.toString());
+//        possibleStates = (ArrayList<Integer>) possibleStates.subList(0,numberOfQuestions);
+//        System.out.println(possibleStates.subList(0,numberOfQuestions));
 
+        possibleStates = new ArrayList<Integer>(possibleStates.subList(0,numberOfQuestions));
+        System.out.println("SHORTENED: " + possibleStates.toString());
         addListeners(view);
         statesDataSource = new StatesDataSource(getContext());
         statesDataSource.open();
@@ -161,7 +168,8 @@ public class QuizFragment extends Fragment {
                         score++;
                         // Make button text green later
                     }
-                    if (currentQuestion<49) {
+                    if (currentQuestion < numberOfQuestions - 1) {
+                        System.out.println(currentQuestion + "," + numberOfQuestions);
                         currentQuestion++;
                     } else {
                         System.out.println("SUBMITTED ALL 50 STATES");
@@ -181,6 +189,7 @@ public class QuizFragment extends Fragment {
                         bundle.putString("playerName",playerName);
                         bundle.putDouble("time",time);
                         bundle.putInt("score",score);
+                        bundle.putInt("questions",numberOfQuestions);
                         navController.navigate(R.id.action_quiz_to_quizResults,bundle);
 
                     }

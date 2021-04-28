@@ -61,4 +61,18 @@
         android:name="com.example.geoquiz.SpecificLearnFragment"
         android:label="fragment_specific_learn"
         tools:layout="@layout/fragment_specific_learn" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.geoquiz.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.geoquiz.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_startScreenFragment"
+            app:destination="@id/startScreenFragment" />
+    </fragment>
 </navigation>

@@ -22,6 +22,7 @@ public class QuizResultsFragment extends Fragment {
     private String playerName = null;
     private double playerTime = 0;
     private int playerScore = 0;
+    private int numberOfQuestions = 50;
 
     private String firstPlaceNameString = null, firstPlaceTimeString = null, firstPlaceScoreString;
     private String secondPlaceNameString = null, secondPlaceTimeString = null, secondPlaceScoreString;
@@ -46,9 +47,10 @@ public class QuizResultsFragment extends Fragment {
         playerName = getArguments().getString("playerName");
         playerTime = getArguments().getDouble("time");
         playerScore = getArguments().getInt("score");
+        numberOfQuestions = getArguments().getInt("questions");
 
         TextView scoreTextView = view.findViewById(R.id.ScoreText);
-        scoreTextView.setText(playerScore + "/50 STATES");
+        scoreTextView.setText(playerScore + "/" + String.valueOf(numberOfQuestions) + " STATES");
 
         TextView timeTextView = view.findViewById(R.id.TimeText);
 
