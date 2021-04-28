@@ -45,7 +45,7 @@ public class QuizResultsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_quiz_results, container, false);
         playerName = getArguments().getString("playerName");
-        playerTime = getArguments().getDouble("time");
+        playerTime = getArguments().getDouble("timeDouble");
         playerScore = getArguments().getInt("score");
         numberOfQuestions = getArguments().getInt("questions");
 
@@ -61,8 +61,7 @@ public class QuizResultsFragment extends Fragment {
 
         setupLeaderboard(view);
 
-        TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
-//        firstPlaceName.setText();
+//        TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
 
         view.findViewById(R.id.TryAgainButton).setOnClickListener(btnListener);
         view.findViewById(R.id.QuizToLearnButton).setOnClickListener(btnListener);
@@ -110,27 +109,27 @@ public class QuizResultsFragment extends Fragment {
 
             TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
             TextView firstPlaceTime = (TextView) view.findViewById(R.id.FirstPlaceTime);
-//            TextView firstPlaceScore = (TextView) view.findViewById(R.id.First);
+            TextView firstPlaceScore = (TextView) view.findViewById(R.id.FirstPlaceScore);
 
             TextView secondPlaceName = (TextView) view.findViewById(R.id.SecondPlaceName);
             TextView secondPlaceTime = (TextView) view.findViewById(R.id.SecondPlaceTime);
-//            TextView secondPlaceScore = (TextView) view.findViewById(R.id.SecondPlaceScore);
+            TextView secondPlaceScore = (TextView) view.findViewById(R.id.SecondPlaceScore);
 
             TextView thirdPlaceName = (TextView) view.findViewById(R.id.ThirdPlaceName);
             TextView thirdPlaceTime = (TextView) view.findViewById(R.id.ThirdPlaceTime);
-//            TextView thirdPlaceScore = (TextView) view.findViewById(R.id.ThirdPlaceScore);
+            TextView thirdPlaceScore = (TextView) view.findViewById(R.id.ThirdPlaceScore);
 
             firstPlaceName.setText(firstPlaceNameString);
             firstPlaceTime.setText(firstPlaceTimeString);
-//            firstPlaceScore.setText(firstPlaceScoreString);
+            firstPlaceScore.setText(firstPlaceScoreString);
 
             secondPlaceName.setText(secondPlaceNameString);
             secondPlaceTime.setText(secondPlaceTimeString);
-//            secondPlaceScore.setText(secondPlaceScoreString);
+            secondPlaceScore.setText(secondPlaceScoreString);
 
             thirdPlaceName.setText(thirdPlaceNameString);
             thirdPlaceTime.setText(thirdPlaceTimeString);
-//            thirdPlaceScore.setText(thirdPlaceScoreString);
+            thirdPlaceScore.setText(thirdPlaceScoreString);
         }
     }
 
@@ -151,7 +150,7 @@ public class QuizResultsFragment extends Fragment {
                     case R.id.TryAgainButton:
                         // Navigate to Pre Quiz Screen
                         System.out.println("Try Again clicked");
-                        navController.navigate(R.id.action_QuizResultsFragment_to_PreQuizFragment);
+                        navController.navigate(R.id.action_QuizResultsFragment_to_PreQuizFragment,getArguments());
                         break;
                     case R.id.QuizToLearnButton:
                         // Navigate to Learn Page

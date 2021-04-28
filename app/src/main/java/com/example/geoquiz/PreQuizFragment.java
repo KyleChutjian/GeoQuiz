@@ -49,7 +49,12 @@ public class PreQuizFragment extends Fragment implements View.OnClickListener {
             if (playerNameEditText.getText().toString().trim().isEmpty()) {
                 Toast.makeText(getContext(),"Enter your name!",Toast.LENGTH_LONG).show();
             } else {
-                getArguments().putString("playerName",playerNameEditText.getText().toString());
+                if (getArguments() != null) {
+                    getArguments().putString("playerName",playerNameEditText.getText().toString());
+                } else {
+                    System.out.println("Something went wrong idk");
+                }
+
                 navController.navigate(R.id.action_preQuizFragment_to_quiz,getArguments());
             }
 

@@ -187,12 +187,11 @@ public class QuizFragment extends Fragment {
 
                         leaderboardDataSource.insertEntry(playerName,time,score);
                         leaderboardDataSource.close();
-                        Bundle bundle = new Bundle();
-                        bundle.putString("playerName",playerName);
-                        bundle.putDouble("time",time);
-                        bundle.putInt("score",score);
-                        bundle.putInt("questions",numberOfQuestions);
-                        navController.navigate(R.id.action_quiz_to_quizResults,bundle);
+                        getArguments().putString("playerName",playerName);
+                        getArguments().putDouble("timeDouble",time);
+                        getArguments().putInt("score",score);
+                        getArguments().putInt("questions",numberOfQuestions);
+                        navController.navigate(R.id.action_quiz_to_quizResults,getArguments());
 
                     }
                     setupDatabase(view);

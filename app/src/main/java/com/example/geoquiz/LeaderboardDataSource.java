@@ -31,7 +31,7 @@ public class LeaderboardDataSource {
     }
 
     public Cursor queryTopThree() {
-        Cursor cursor = database.rawQuery("SELECT name,time,score FROM LEADERBOARD ORDER BY time ASC",null);
+        Cursor cursor = database.rawQuery("SELECT name,time,score FROM LEADERBOARD ORDER BY score DESC, time ASC",null);
         return cursor;
     }
 
