@@ -21,7 +21,7 @@
         android:id="@+id/IGuessedText"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         android:id="@+id/MyTimeText"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         android:id="@+id/TimeText"
         android:layout_marginTop="-20dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         android:id="@+id/LeaderboardText"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="30dp"
                 android:text="1:"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
             <TextView
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="NO NAME"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
             <TextView
@@ -114,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N/A"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 <!--            <TextView-->
 <!--                android:id="@+id/FirstPlaceScore"-->
@@ -137,7 +137,7 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="30dp"
                 android:text="2:"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
             <TextView
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="NO NAME"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
             <TextView
@@ -154,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N/A"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
         </TableRow>
@@ -170,7 +170,7 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="30dp"
                 android:text="3:"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
             <TextView
@@ -179,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="NO NAME"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
             <TextView
@@ -187,7 +187,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="N/A"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="20dp" />
 
         </TableRow>

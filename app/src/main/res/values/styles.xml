@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name = "backgroundColor">@color/white</item>
+        <item name = "android:textColor">@color/white</item>
+        <item name = "colorPrimary">@color/buttonColor</item>
+        <item name = "colorPrimaryDark">@color/buttonColorDark</item>
+        <item name = "colorAccent">@color/buttonColor</item>
+    </style>
+
+    <style name="DarkAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name = "backgroundColor">@color/offBlack</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name = "colorPrimary">@color/buttonColor</item>
+        <item name = "colorPrimaryDark">@color/buttonColorDark</item>
+        <item name = "colorAccent">@color/buttonColor</item>
+    </style>
+
+    <style name="Light" parent="AppTheme"/>
+    <style name="Dark" parent="DarkAppTheme"/>
+
+    <style name="ToolBarTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name = "colorPrimary">@color/buttonColor</item>
+        <item name = "colorPrimaryDark">@color/buttonColor</item>
+        <item name = "colorAccent">@color/purple_700</item>
+    </style>
+
+
+</resources>

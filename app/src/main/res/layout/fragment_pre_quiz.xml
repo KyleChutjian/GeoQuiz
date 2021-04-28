@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:text="What's Your Name?"
-        android:textColor="@color/textColor"
+        android:textColor="@color/hintColor"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -26,6 +26,7 @@
         android:inputType="textPersonName"
         android:text=""
         android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor"
         android:hint="@string/player_name_hint"/>
 
     <TextView

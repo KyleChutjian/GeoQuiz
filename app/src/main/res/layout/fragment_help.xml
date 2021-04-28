@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HelpFragment">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="HELP"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Welcome to GeoQuiz!"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="GEOQUIZ is an educational Geography app built to help you sharpen your map skills and knowledge! From the home screen, click on Learn to learn about each and every state. Once you're ready, head back to the home screen and start the US States Quiz! Enter your name and begin! Try to beat your best time in the leaderboard! Share your results with your friends by hitting the Share Results button once you've finished the quiz!"
+        android:textColor="@color/textColor"
+        android:textSize="10sp"
+         />
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Struggling on your quiz? Change the number of questions or the time restrictions in the Quiz Settings; accessible by clicking the GEAR icon in the action bar on every screen!"
+        android:textColor="@color/textColor"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Straining your eyes from too much white space? Turn night mode on by clicking the icon with the Sun and the Moon on the action bar at anytime! If you get tired of Night Mode, switch back to day mode by clicking the same button!"
+        android:textColor="@color/textColor"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Share our app at anytime by clicking the share icon in the ActionBar!"
+        android:textColor="@color/textColor"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:padding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="GEOQUIZ 2021"
+        android:textColor="@color/textColor"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:padding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="DEVELOPED BY: Kyle Chutjian + Max Petruzziello"
+        android:textColor="@color/textColor"
+        android:textSize="10sp"
+        />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="126dp"
+        android:layout_height="76dp"
+        android:src="@drawable/geoquiz" />
+
+
+</LinearLayout>
