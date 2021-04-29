@@ -38,6 +38,7 @@ public class StartScreenFragment extends Fragment implements View.OnClickListene
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+        System.out.println("T");
         if (getArguments() != null) {
             quizQuestions = getArguments().getInt("questions");
             quizTime = getArguments().getInt("time");
