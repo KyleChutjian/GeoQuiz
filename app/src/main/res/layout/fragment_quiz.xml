@@ -476,7 +476,7 @@
 
                 <Button
                     android:id="@+id/button_29"
-                    android:tag="NewHampshire"
+                    android:tag="New Hampshire"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -489,7 +489,7 @@
 
                 <Button
                     android:id="@+id/button_30"
-                    android:tag="NewJersey"
+                    android:tag="New Jersey"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -506,7 +506,7 @@
 
                 <Button
                     android:id="@+id/button_31"
-                    android:tag="NewMexico"
+                    android:tag="New Mexico"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -519,7 +519,7 @@
 
                 <Button
                     android:id="@+id/button_32"
-                    android:tag="NewYork"
+                    android:tag="New York"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -532,7 +532,7 @@
 
                 <Button
                     android:id="@+id/button_33"
-                    android:tag="NorthCarolina"
+                    android:tag="North Carolina"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -545,7 +545,7 @@
 
                 <Button
                     android:id="@+id/button_34"
-                    android:tag="NorthDakota"
+                    android:tag="North Dakota"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -615,7 +615,7 @@
 
                 <Button
                     android:id="@+id/button_39"
-                    android:tag="RhodeIsland"
+                    android:tag="Rhode Island"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -628,7 +628,7 @@
 
                 <Button
                     android:id="@+id/button_40"
-                    android:tag="SouthCarolina"
+                    android:tag="South Carolina"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -645,7 +645,7 @@
 
                 <Button
                     android:id="@+id/button_41"
-                    android:tag="SouthDakota"
+                    android:tag="South Dakota"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -740,7 +740,7 @@
 
                 <Button
                     android:id="@+id/button_48"
-                    android:tag="WestVirginia"
+                    android:tag="West Virginia"
                     android:layout_weight="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"

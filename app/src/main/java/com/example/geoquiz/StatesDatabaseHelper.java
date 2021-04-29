@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class StatesDatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "statesDB.db";
-    private static final int DB_VERSION = 3;
+    private static final int DB_VERSION = 4;
     private static final String DB_CREATE = "CREATE TABLE STATES(_id integer primary key autoincrement, name text not null, description text not null, imageLink text not null);";
 
     public StatesDatabaseHelper(Context context) {
