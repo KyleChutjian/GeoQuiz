@@ -1,24 +1,16 @@
 package com.example.geoquiz;
 
-import android.annotation.SuppressLint;
-import android.content.res.ColorStateList;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,8 +25,6 @@ import java.util.Collections;
 import java.util.Date;
 
 
-// I added the navigation to results screen only for when the timer runs out - couldn't find where questions are all done
-
 public class QuizFragment extends Fragment {
     private TextView timerTextView;
     private CountDownTimer timer;
@@ -46,7 +36,7 @@ public class QuizFragment extends Fragment {
     private NavController navController;
 
     // Database variables
-    private Cursor statesCursor,leaderboardCursor;
+    private Cursor statesCursor;
     private StatesDataSource statesDataSource;
     private LeaderboardDataSource leaderboardDataSource;
     private String currentStateName = null,currentStateDescription = null,currentStateImageLink = null;
@@ -79,10 +69,10 @@ public class QuizFragment extends Fragment {
             possibleStates.add(i); // adds indexes 1-50 to the list
         }
         Collections.shuffle(possibleStates); // randomizes the list
-
-
         possibleStates = new ArrayList<Integer>(possibleStates.subList(0,numberOfQuestions));
+
         addListeners(view);
+
         statesDataSource = new StatesDataSource(getContext());
         statesDataSource.open();
         setupDatabase(view);
@@ -97,20 +87,14 @@ public class QuizFragment extends Fragment {
         navController = Navigation.findNavController(view);
     }
 
-//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-//    @SuppressLint("ResourceAsColor")
     public boolean isCorrect(View view, View buttonView) {
         Button clickedButton = (Button) view.findViewById(buttonView.getId());
-        System.out.println("Checking if " + clickedButton.getTag().toString() + " is equal to " + currentStateName);
         if (currentStateName.equalsIgnoreCase(clickedButton.getTag().toString())) {
-            System.out.println("Correct!");
             buttonView.setBackgroundColor(getResources().getColor(R.color.green));
-           // buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.green));
+            buttonView.setEnabled(false);
             return true;
         } else {
-            System.out.println("Incorrect!");
             buttonView.setBackgroundColor(getResources().getColor(R.color.red));
-           // buttonView.setBackgroundTintList(ColorStateList.valueOf(R.color.red));
             return false;
         }
     }
@@ -128,11 +112,6 @@ public class QuizFragment extends Fragment {
                 time = maxTimerSeconds - (double) currentMillis/1000;
                 leaderboardDataSource = new LeaderboardDataSource(getContext());
                 leaderboardDataSource.open();
-
-                System.out.println("PlayerName: " + playerName);
-                System.out.println("PlayerTime: " + time);
-                System.out.println("PlayerScore: " + score);
-
                 leaderboardDataSource.insertEntry(playerName,time,score);
                 leaderboardDataSource.close();
                 Bundle bundle = new Bundle();
@@ -157,7 +136,6 @@ public class QuizFragment extends Fragment {
                 currentStateDescription = statesCursor.getString(2);
                 currentStateImageLink = statesCursor.getString(3);
                 setImage(view);
-                System.out.println("CurrentStateName: " + currentStateName);
             }
         } catch (SQLException e) {
             System.out.println("Database didnt load");
@@ -178,29 +156,17 @@ public class QuizFragment extends Fragment {
                 public void onClick(View v) {
                     if(isCorrect(view,v)) {
                         score++;
-//                        v.setBackgroundColor(Color.GREEN);
-                        // Make button text green later
-                    } else {
-//                        v.setBackgroundColor(Color.RED);
-//                        v.setBackground();
                     }
                     if (currentQuestion < numberOfQuestions - 1) {
-                        System.out.println(currentQuestion + "," + numberOfQuestions);
                         TextView myScoreText = (TextView) view.findViewById(R.id.myScoreText);
                         myScoreText.setText(score + "/" + numberOfQuestions);
                         currentQuestion++;
                     } else {
-                        System.out.println("SUBMITTED ALL 50 STATES");
                         // move onto results screen
                         timer.cancel();
                         time = maxTimerSeconds - (double) currentMillis/1000;
                         leaderboardDataSource = new LeaderboardDataSource(getContext());
                         leaderboardDataSource.open();
-
-                        System.out.println("PlayerName: " + playerName);
-                        System.out.println("PlayerTime: " + time);
-                        System.out.println("PlayerScore: " + score);
-
                         leaderboardDataSource.insertEntry(playerName,time,score);
                         leaderboardDataSource.close();
                         getArguments().putString("playerName",playerName);
@@ -208,7 +174,6 @@ public class QuizFragment extends Fragment {
                         getArguments().putInt("score",score);
                         getArguments().putInt("questions",numberOfQuestions);
                         navController.navigate(R.id.action_quiz_to_quizResults,getArguments());
-
                     }
                     setupDatabase(view);
                 }
@@ -252,7 +217,12 @@ public class QuizFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        System.out.println("CLOSED");
         statesDataSource.close();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        timer.cancel();
     }
 }

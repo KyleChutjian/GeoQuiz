@@ -27,7 +27,6 @@ public class LearnFragment extends Fragment {
 
     public LearnFragment() { }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +67,6 @@ public class LearnFragment extends Fragment {
                 public void onClick(View v) {
                     int id = Integer.parseInt(v.getTag().toString()) - 1;
                     String imageLink = allImages.get(id).getTag().toString();
-                    System.out.println(imageLink);
                     String[] stateData = statesDataSource.queryWithImageLink(imageLink);
                     String stateName = stateData[0];
                     String stateDescription = stateData[1];

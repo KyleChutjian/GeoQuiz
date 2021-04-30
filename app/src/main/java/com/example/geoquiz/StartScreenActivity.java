@@ -58,9 +58,7 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
         } else {
             settingsFragment = new SettingsFragment();
         }
-
-
-        // Toolbar goes in Activity so it appears on every screen
+        // Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -118,12 +116,10 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
             case R.id.app_bar_color:
                 if (isDarkModeOn == false) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    System.out.println("Dark Mode is now on");
                     editor.putBoolean("isDarkModeOn",true);
                     editor.apply();
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    System.out.println("Dark Mode is now off");
                     editor.putBoolean("isDarkModeOn",false);
                     editor.apply();
                 }
@@ -131,14 +127,12 @@ public class StartScreenActivity extends AppCompatActivity implements Navigation
 
             // open Settings screen
             case R.id.app_bar_settings:
-                System.out.println("CLICKED ON SETTINGS");
                 navController.navigate(R.id.settingsFragment);
                 break;
 
             // open Help screen
             case R.id.app_bar_help:
                 navController.navigate(R.id.helpFragment);
-                System.out.println("CLICKED ON HELP");
                 break;
 
             default:

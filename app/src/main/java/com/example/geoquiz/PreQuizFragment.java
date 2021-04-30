@@ -30,7 +30,6 @@ public class PreQuizFragment extends Fragment implements View.OnClickListener {
         if (getArguments() != null) {
             int quizQuestions = getArguments().getInt("questions");
             int quizTime = getArguments().getInt("time");
-            System.out.println("PREQUIZ: " + quizQuestions + ", " + quizTime);
         }
         return inflater.inflate(R.layout.fragment_pre_quiz, container, false);
     }
@@ -51,13 +50,9 @@ public class PreQuizFragment extends Fragment implements View.OnClickListener {
             } else {
                 if (getArguments() != null) {
                     getArguments().putString("playerName",playerNameEditText.getText().toString());
-                } else {
-                    System.out.println("Something went wrong idk");
                 }
-
                 navController.navigate(R.id.action_preQuizFragment_to_quiz,getArguments());
             }
-
         }
     }
 }

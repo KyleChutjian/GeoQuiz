@@ -31,11 +31,8 @@ import static com.google.android.material.internal.ContextUtils.getActivity;
 
 @RunWith(AndroidJUnit4.class)
 public class StartScreenActivityTest {
-
     @Rule
     public ActivityTestRule<StartScreenActivity> startScreenActivityActivityTestRule = new ActivityTestRule<>(StartScreenActivity.class);
-
-
     @Test
     public void testOnCreateView() {
         onView(withId(R.id.us_states_quiz)).perform(click());

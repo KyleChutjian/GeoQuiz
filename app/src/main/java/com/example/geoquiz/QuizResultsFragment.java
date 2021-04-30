@@ -23,16 +23,11 @@ public class QuizResultsFragment extends Fragment {
     private double playerTime = 0;
     private int playerScore = 0;
     private int numberOfQuestions = 50;
-
     private String firstPlaceNameString = null, firstPlaceTimeString = null, firstPlaceScoreString;
     private String secondPlaceNameString = null, secondPlaceTimeString = null, secondPlaceScoreString;
     private String thirdPlaceNameString = null, thirdPlaceTimeString = null, thirdPlaceScoreString;
-
-    // Databases
     private Cursor cursor;
     private LeaderboardDataSource leaderboardDataSource;
-
-
 
     public QuizResultsFragment() {}
 
@@ -61,13 +56,9 @@ public class QuizResultsFragment extends Fragment {
 
         setupLeaderboard(view);
 
-//        TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
-
         view.findViewById(R.id.TryAgainButton).setOnClickListener(btnListener);
         view.findViewById(R.id.QuizToLearnButton).setOnClickListener(btnListener);
         view.findViewById(R.id.ShareButton).setOnClickListener(btnListener);
-
-
 
         return view;
     }
@@ -80,9 +71,6 @@ public class QuizResultsFragment extends Fragment {
 
     private void setupLeaderboard(View view) {
         cursor = leaderboardDataSource.queryTopThree();
-
-        System.out.println("Query Number:" + cursor.getCount());
-
 
         if (cursor.moveToFirst()) {
             firstPlaceNameString = cursor.getString(0);
@@ -102,10 +90,6 @@ public class QuizResultsFragment extends Fragment {
             thirdPlaceNameString = cursor.getString(0);
             thirdPlaceTimeString = convertTime(cursor.getDouble(1));
             thirdPlaceScoreString = String.valueOf(cursor.getInt(2));
-
-            System.out.println(firstPlaceNameString + "," + firstPlaceTimeString + "," + firstPlaceScoreString);
-            System.out.println(secondPlaceNameString + "," + secondPlaceTimeString + "," + secondPlaceScoreString);
-            System.out.println(thirdPlaceNameString + "," + thirdPlaceTimeString + "," + thirdPlaceScoreString);
 
             TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
             TextView firstPlaceTime = (TextView) view.findViewById(R.id.FirstPlaceTime);
@@ -140,36 +124,27 @@ public class QuizResultsFragment extends Fragment {
         return String.format("%02d:%02d:%02d", mins, secs, millis);
     }
 
+    private final View.OnClickListener btnListener = new View.OnClickListener() {
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.TryAgainButton:
+                    navController.navigate(R.id.action_QuizResultsFragment_to_PreQuizFragment,getArguments());
+                    break;
+                case R.id.QuizToLearnButton:
+                    navController.navigate(R.id.action_QuizResultsFragment_to_LearnFragment);
 
-
-    // Need to implement buttons with listeners - I'll come back to this - max
-
-        private final View.OnClickListener btnListener = new View.OnClickListener() {
-            public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.TryAgainButton:
-                        // Navigate to Pre Quiz Screen
-                        System.out.println("Try Again clicked");
-                        navController.navigate(R.id.action_QuizResultsFragment_to_PreQuizFragment,getArguments());
-                        break;
-                    case R.id.QuizToLearnButton:
-                        // Navigate to Learn Page
-                        System.out.println("Learn clicked");
-                        navController.navigate(R.id.action_QuizResultsFragment_to_LearnFragment);
-
-                        break;
-                    case R.id.ShareButton:
-                        System.out.println("Share clicked");
-                        Intent share = new Intent(Intent.ACTION_SEND);
-                        share.setType("text/plain");
-                        String subject = "Download GeoQuiz!";
-                        String shareText = "I got " + playerScore + "/50 States correct on my GeoQuiz!\nMy time was " + playerTime + "\nTry and beat that!";
-                        share.putExtra(Intent.EXTRA_SUBJECT, subject);
-                        share.putExtra(Intent.EXTRA_TEXT, shareText);
-                        startActivity(Intent.createChooser(share, "My Score on GeoQuiz"));
-                        break;
-                }
+                    break;
+                case R.id.ShareButton:
+                    Intent share = new Intent(Intent.ACTION_SEND);
+                    share.setType("text/plain");
+                    String subject = "Download GeoQuiz!";
+                    String shareText = "I got " + playerScore + "/50 States correct on my GeoQuiz!\nMy time was " + playerTime + "\nTry and beat that!";
+                    share.putExtra(Intent.EXTRA_SUBJECT, subject);
+                    share.putExtra(Intent.EXTRA_TEXT, shareText);
+                    startActivity(Intent.createChooser(share, "My Score on GeoQuiz"));
+                    break;
             }
+        }
     };
 
     @Override

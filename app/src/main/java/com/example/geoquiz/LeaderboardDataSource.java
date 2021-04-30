@@ -16,7 +16,6 @@ public class LeaderboardDataSource {
 
     public void open() throws SQLException {
         database = dbHelper.getWritableDatabase();
-//        insertEntry("EXAMPLE ENTRY",1200,0);
     }
     public void close() {
         dbHelper.close();
@@ -25,6 +24,7 @@ public class LeaderboardDataSource {
     public SQLiteDatabase getDatabase() {
         return database;
     }
+
     public Cursor getCursor() {
         Cursor cursor = database.rawQuery("SELECT * FROM LEADERBOARD",null);
         return cursor;
@@ -34,8 +34,6 @@ public class LeaderboardDataSource {
         Cursor cursor = database.rawQuery("SELECT name,time,score FROM LEADERBOARD ORDER BY score DESC, time ASC",null);
         return cursor;
     }
-
-
 
     public void insertEntry(String name, double time, int score) {
         ContentValues leaderboardValues = new ContentValues();
