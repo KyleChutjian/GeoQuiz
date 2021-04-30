@@ -87,7 +87,6 @@ public class StatesDataSource {
         insertState("Arizona","In Arizona (AZ), cutting down a Cactus can get you thrown into jail.","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/arizona-map-outline-dddddd.png");
         insertState("Alaska","Not only is Alaska (AK) the largest state in the country (more than twice as large as Texas), Wrangell–St Elias National Park & Preserve covers a larger area than nine US states.","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/alaska-map-outline-dddddd.png");
         insertState("Hawaii","Hawaii (HI) has the most isolated large population center on Earth, almost 2,400 miles from California and about 4,000 miles from Japan. ","https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/hawaii-map-outline-dddddd.png");
-        //dataSource.insertState("","","");
     }
 
     public String[] queryWithImageLink(String link) {
