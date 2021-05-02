@@ -212,6 +212,10 @@ public class QuizFragment extends Fragment {
     public void onResume() {
         super.onResume();
         statesDataSource.open();
+
+
+
+
     }
 
     @Override

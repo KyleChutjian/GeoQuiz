@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class LeaderboardDatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "leaderboardDB.db";
-    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 3;
     private static final String DB_CREATE = "CREATE TABLE LEADERBOARD(_id integer primary key autoincrement, name text not null, time double not null, score integer not null);";
 
     public LeaderboardDatabaseHelper(Context context) {
