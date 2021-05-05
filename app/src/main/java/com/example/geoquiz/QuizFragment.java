@@ -145,9 +145,10 @@ public class QuizFragment extends Fragment {
     public void addListeners(View view) {
         ArrayList<View> allButtons = new ArrayList<>();
         for (int i = 1; i <= 50; i++) {
-            int id = this.getResources().getIdentifier("button_"+i,"id", "com.example.geoquiz");
+            int id = this.getResources().getIdentifier("button_"+i,"id", getContext().getPackageName());
             Button btn = (Button)view.findViewById(id);
             allButtons.add(btn);
+
         }
 
         for (int i = 0; i < allButtons.size(); i++) {

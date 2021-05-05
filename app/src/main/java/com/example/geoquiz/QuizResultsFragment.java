@@ -13,7 +13,6 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class QuizResultsFragment extends Fragment {
@@ -71,45 +70,48 @@ public class QuizResultsFragment extends Fragment {
 
     private void setupLeaderboard(View view) {
         cursor = leaderboardDataSource.queryTopThree();
+        TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
+        TextView firstPlaceTime = (TextView) view.findViewById(R.id.FirstPlaceTime);
+        TextView firstPlaceScore = (TextView) view.findViewById(R.id.FirstPlaceScore);
+
+        TextView secondPlaceName = (TextView) view.findViewById(R.id.SecondPlaceName);
+        TextView secondPlaceTime = (TextView) view.findViewById(R.id.SecondPlaceTime);
+        TextView secondPlaceScore = (TextView) view.findViewById(R.id.SecondPlaceScore);
+
+        TextView thirdPlaceName = (TextView) view.findViewById(R.id.ThirdPlaceName);
+        TextView thirdPlaceTime = (TextView) view.findViewById(R.id.ThirdPlaceTime);
+        TextView thirdPlaceScore = (TextView) view.findViewById(R.id.ThirdPlaceScore);
 
         if (cursor.moveToFirst()) {
             firstPlaceNameString = cursor.getString(0);
             firstPlaceTimeString = convertTime(cursor.getDouble(1));
             firstPlaceScoreString = String.valueOf(cursor.getInt(2));
-            cursor.moveToNext();
-            if (cursor.isAfterLast()) {
-                return;
-            }
-            secondPlaceNameString = cursor.getString(0);
-            secondPlaceTimeString = convertTime(cursor.getDouble(1));
-            secondPlaceScoreString = String.valueOf(cursor.getInt(2));
-            cursor.moveToNext();
-            if (cursor.isAfterLast()) {
-                return;
-            }
-            thirdPlaceNameString = cursor.getString(0);
-            thirdPlaceTimeString = convertTime(cursor.getDouble(1));
-            thirdPlaceScoreString = String.valueOf(cursor.getInt(2));
-
-            TextView firstPlaceName = (TextView) view.findViewById(R.id.FirstPlaceName);
-            TextView firstPlaceTime = (TextView) view.findViewById(R.id.FirstPlaceTime);
-            TextView firstPlaceScore = (TextView) view.findViewById(R.id.FirstPlaceScore);
-
-            TextView secondPlaceName = (TextView) view.findViewById(R.id.SecondPlaceName);
-            TextView secondPlaceTime = (TextView) view.findViewById(R.id.SecondPlaceTime);
-            TextView secondPlaceScore = (TextView) view.findViewById(R.id.SecondPlaceScore);
-
-            TextView thirdPlaceName = (TextView) view.findViewById(R.id.ThirdPlaceName);
-            TextView thirdPlaceTime = (TextView) view.findViewById(R.id.ThirdPlaceTime);
-            TextView thirdPlaceScore = (TextView) view.findViewById(R.id.ThirdPlaceScore);
 
             firstPlaceName.setText(firstPlaceNameString);
             firstPlaceTime.setText(firstPlaceTimeString);
             firstPlaceScore.setText(firstPlaceScoreString);
 
+            cursor.moveToNext();
+            if (cursor.isAfterLast()) {
+                System.out.println("AfterLast1");
+                return;
+            }
+            secondPlaceNameString = cursor.getString(0);
+            secondPlaceTimeString = convertTime(cursor.getDouble(1));
+            secondPlaceScoreString = String.valueOf(cursor.getInt(2));
+
             secondPlaceName.setText(secondPlaceNameString);
             secondPlaceTime.setText(secondPlaceTimeString);
             secondPlaceScore.setText(secondPlaceScoreString);
+
+            cursor.moveToNext();
+            if (cursor.isAfterLast()) {
+                System.out.println("AfterLast2");
+                return;
+            }
+            thirdPlaceNameString = cursor.getString(0);
+            thirdPlaceTimeString = convertTime(cursor.getDouble(1));
+            thirdPlaceScoreString = String.valueOf(cursor.getInt(2));
 
             thirdPlaceName.setText(thirdPlaceNameString);
             thirdPlaceTime.setText(thirdPlaceTimeString);
