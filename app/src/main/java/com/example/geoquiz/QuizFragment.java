@@ -162,7 +162,9 @@ public class QuizFragment extends Fragment {
                         TextView myScoreText = (TextView) view.findViewById(R.id.myScoreText);
                         myScoreText.setText(score + "/" + numberOfQuestions);
                         currentQuestion++;
+                        setupDatabase(view);
                     } else {
+                        System.out.println(possibleStates.toString());
                         // move onto results screen
                         timer.cancel();
                         time = maxTimerSeconds - (double) currentMillis/1000;
@@ -176,7 +178,7 @@ public class QuizFragment extends Fragment {
                         getArguments().putInt("questions",numberOfQuestions);
                         navController.navigate(R.id.action_quiz_to_quizResults,getArguments());
                     }
-                    setupDatabase(view);
+
                 }
             });
         }

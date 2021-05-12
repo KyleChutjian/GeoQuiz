@@ -52,8 +52,8 @@ public class LearnFragment extends Fragment {
         ArrayList<View> allImages = new ArrayList<>();
         ArrayList<View> allCards = new ArrayList<>();
         for (int i = 1; i <= 50; i++) {
-            int imageId = this.getResources().getIdentifier("image_"+i,"id", "com.mk.geoquiz");
-            int cardId = this.getResources().getIdentifier("card_"+i,"id", "com.mk.geoquiz");
+            int imageId = this.getResources().getIdentifier("image_"+i,"id", getContext().getPackageName());
+            int cardId = this.getResources().getIdentifier("card_"+i,"id", getContext().getPackageName());
             ImageView image = (ImageView)view.findViewById(imageId);
             CardView card = (CardView)view.findViewById(cardId);
             allImages.add(image);
